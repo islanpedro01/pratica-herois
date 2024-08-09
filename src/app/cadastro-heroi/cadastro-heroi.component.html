@@ -1,0 +1,23 @@
+<mat-card class="card-insercao">
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input matInput [(ngModel)]="heroi.nome">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Poder</mat-label>
+            <input matInput [(ngModel)]="heroi.Poder">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Identidade Secreta</mat-label>
+            <input matInput [(ngModel)]="heroi.IdentidadeSecreta">
+        </mat-form-field>
+    </mat-card-content>
+    <button class="botao" mat-fab aria-label (click)="salvarHeroi()">
+        @if (edicao) {
+            <mat-icon>edit</mat-icon>
+        } @else {
+            <mat-icon >add</mat-icon>
+        } 
+    </button>
+</mat-card>

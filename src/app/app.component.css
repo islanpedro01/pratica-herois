@@ -1,0 +1,11 @@
+.card-insercao {
+    margin: 10px;
+    width: 400px;
+    background-color: aliceblue;
+  }
+
+  .botao {
+    /* background-color: rgb(40, 10, 207); */
+    align-self: self-end;
+    margin: 10px;
+  }
